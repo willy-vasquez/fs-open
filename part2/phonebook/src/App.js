@@ -104,10 +104,10 @@ export const App = () => {
     }, 3000);
   };
 
-  const byFilterName = ({ name }) =>
+  const byName = ({ name }) =>
     name.toLowerCase().includes(filter.toLowerCase());
 
-  const filterPersons = filter ? persons.filter(byFilterName) : persons;
+  const filterPersons = filter ? persons.filter(byName) : persons;
 
   return (
     <div>
